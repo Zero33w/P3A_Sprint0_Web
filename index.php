@@ -1,9 +1,10 @@
-<?php include("template/cabecera.php"); ?>
+<?php include("template/cabecera.php"); ?> <!-- Esto es una buena practica ya que si en varias páginas de una misma web vas a tener el mismo encabezado y pie de este modo puedes mantenerlo entre ellas sin repetir todo el código -->
 
 <?php
-include("Servidor/solicitarDatos.php");
+include("Servidor/solicitarDatos.php");//esta sección del código recoge los datos de la tabla de la base de datos medida y los guarda en un array llamado result
 ?>
 
+<!-- cuerpo de la web donde se encuentra aquello que será visible -->
 <h1 class="titulo1">Sensor de ozono</h1>
 <div class="seccion">
     <h2>Medidas</h2>
@@ -21,7 +22,7 @@ include("Servidor/solicitarDatos.php");
 
         </thead>
         <tbody>
-        <?php foreach ($result as $med){ ?>
+        <?php foreach ($result as $med){ ?><!-- aqui llenamos con los datos de result las filas de la tabla -->
         <tr>
             <td><?php echo$med['idMedicion'] ?></td>
             <td><?php echo$med['idSensor'] ?></td>

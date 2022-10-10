@@ -1,3 +1,4 @@
+<!-- hoja de estilos de todos los elementos visibles en la web -->
 <style>
     .titulo1{
         color: #282828;
