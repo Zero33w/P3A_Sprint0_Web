@@ -1,7 +1,7 @@
 <?php include("template/cabecera.php"); ?> <!-- Esto es una buena practica ya que si en varias páginas de una misma web vas a tener el mismo encabezado y pie de este modo puedes mantenerlo entre ellas sin repetir todo el código -->
 
 <?php
-include("Servidor/solicitarDatos.php");//esta sección del código recoge los datos de la tabla de la base de datos medida y los guarda en un array llamado result
+include("Servidor/obtenerTodasLasMedidas.php");//esta sección del código recoge los datos de la tabla de la base de datos medida y los guarda en un array llamado result
 ?>
 
 <!-- cuerpo de la web donde se encuentra aquello que será visible -->
@@ -33,7 +33,6 @@ include("Servidor/solicitarDatos.php");//esta sección del código recoge los da
         </tbody>
     </table>
 </div>
-
-
+<?php include("Servidor/pruebaAutomaticaGet.php"); ?>
 <?php include("template/pie.php"); ?>
 
